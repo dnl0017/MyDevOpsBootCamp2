@@ -30,6 +30,7 @@ jobs:
       with:
         inlineScript: |
           az group create --name $RG_NAME --location $LOCATION
+
     - name: Deploy ARM Template
       uses: azure/CLI@v1
       with:
